@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+    <title>James Skipp</title>
+    <link rel="icon" href="img/js.ico">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/jamesskipp.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+		<div id="background-pic-wrapper" class="fluid-container">
+		</div>
+    <nav id="top-nav-wrapper" class="navbar dark-box">
+			<div id="top-nav">
+				<div class="navbar-header">
+	        <a class="navbar-brand" href="/">James Skipp</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+      		<li><a href="/">{about}</a></li>
+      		<li><a href="/blog">{blog}</a></li>
+					<li><a href="/projects">{projects}</a></li>
+    		</ul>
+			</div>
+    </nav>
+		{{{content}}}
+		<footer>
+			<div id="footer-wrapper" class="dark-box">
+				<p>Copyright {{getCurrentYear}}</p>
+				<p>Designed and Coded by James Skipp</p>
+				<p>Source Code <a href="https://github.com/jamesskipp/jamesskipp-site">GitHub</a>
+			</div>
+		</footer>
+  </body>
+</html>

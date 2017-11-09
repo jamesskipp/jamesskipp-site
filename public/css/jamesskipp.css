@@ -1,0 +1,153 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: verdana;
+  color: #484848;
+  min-height: 100%;
+  background-color: #eee;
+}
+
+#background-pic-wrapper {
+  height: 150px;
+  background-image: url("../../img/rockface_c3.png");
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.img-portrait {
+  height: 130px;
+  width: 130px;
+  border: 1px;
+  margin-left: 10px;
+  display: block;
+  position: relative;
+  bottom: -10px;
+}
+
+.navbar {
+  border-radius: 0px;
+}
+
+.dark-box {
+  background-color: #484848;
+}
+
+/*#top-nav {
+  position: absolute;
+  padding-left: 2px;
+  bottom: 0px;
+}*/
+
+#top-nav a,
+#top-nav a:hover {
+  color: white;
+  background-color: inherit;
+  text-align: center;
+  font-size: 20px;
+}
+
+.navbar-right {
+  margin-right: 10px;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: white;
+}
+
+/*.nav-tabs {
+  border-bottom: 0px;
+}
+
+.nav-tabs li {
+  width: 125px;
+  height: 42px;
+}
+
+.nav-tabs li a {
+  text-align: center;
+  border-radius: 0px;
+  color: #484848;
+  height: 100%;
+}*/
+#resume-wrapper {
+  text-align: center;
+}
+
+#resume {
+  width: 60%;
+  display: inline-block;
+  min-height: 1100px;
+}
+
+/*@media (max-width: 900px) {
+  #resume {
+    width: 80%;
+  }
+}*/
+
+@media (max-width: 768px) {
+  #resume {
+    width: 94%;
+  }
+}
+
+.text-box {
+  font-size: 15px;
+  padding: 20px;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.glyphicon-option-horizontal {
+  top: 3px;
+}
+
+.glyphicon-triangle-left,
+.glyphicon-triangle-right {
+  top: 3px;
+}
+
+.full-image {
+  text-align: center;
+}
+
+#jskipp1-pic {
+  width: 100%;
+  height: calc(width * 2);
+  max-width: 380px;
+}
+
+#footer-wrapper {
+  min-height: 100px;
+  width: 100%;
+  margin-top: 25px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-align: center;
+  color: white;
+  bottom: 0px;
+}
+
+.btn-page,
+.btn-page:hover,
+.btn-page:focus {
+  background-color: #484848;
+  color: #eee;
+  font-size: 14;
+  border-radius: 0px;
+  width: 142px;
+}
+
+.btn-back {
+  text-align: left;
+}
+
+.btn-fwd {
+  text-align: right;
+}
