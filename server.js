@@ -37,6 +37,12 @@ app.get('/skills', (req, res) => {
   });
 });
 
+app.get('/history', (req, res) => {
+  res.render('jamesskipp.hbs', {
+    content: fs.readFileSync('html/history.hbs')
+  });
+});
+
 app.get('/resume', (req, res) => {
   res.render('jamesskipp.hbs', {
     content: fs.readFileSync('html/resume.html')

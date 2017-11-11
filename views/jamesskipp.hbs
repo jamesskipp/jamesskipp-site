@@ -19,11 +19,20 @@
 				<div class="navbar-header">
 	        <a class="navbar-brand" href="/">James Skipp</a>
 				</div>
-				<ul class="nav navbar-nav navbar-right">
-      		<li><a href="/">{about}</a></li>
-      		<li><a href="/blog">{blog}</a></li>
-					<li><a href="/projects">{projects}</a></li>
-    		</ul>
+				<div class="nav navbar-nav navbar-right">
+					<button class="dropbtn">{blog}</button>
+				</div>
+				<div class="nav navbar-nav navbar-right">
+					<button class="dropbtn">{projects}</button>
+				</div>
+				<div class="nav navbar-nav navbar-right dropdown">
+					<button class="dropbtn">{about}</button>
+					<div class="dropdown-content">
+						<a href="/">introduction</a>
+						<a href="/skills">skills</a>
+						<a href="/history">history</a>
+					</div>
+				</div>
 			</div>
     </nav>
 		{{{content}}}
