@@ -27,13 +27,19 @@ hbs.registerHelper('getCurrentYear', () => {
 
 app.get('/', (req, res) => {
   res.render('jamesskipp.hbs', {
-    content: fs.readFileSync('html/about.html')
+    content: fs.readFileSync('html/about.hbs')
+  });
+});
+
+app.get('/about', (req, res) => {
+  res.render('jamesskipp.hbs', {
+    content: fs.readFileSync('html/about.hbs')
   });
 });
 
 app.get('/skills', (req, res) => {
   res.render('jamesskipp.hbs', {
-    content: fs.readFileSync('html/skills.html')
+    content: fs.readFileSync('html/skills.hbs')
   });
 });
 
@@ -45,7 +51,7 @@ app.get('/history', (req, res) => {
 
 app.get('/resume', (req, res) => {
   res.render('jamesskipp.hbs', {
-    content: fs.readFileSync('html/resume.html')
+    content: fs.readFileSync('html/resume.hbs')
   });
 });
 
@@ -57,7 +63,7 @@ app.get('/blog', (req, res) => {
 
 app.get('/projects', (req, res) => {
   res.render('jamesskipp.hbs', {
-    content: '<div><p>Projects Coming Soon!</p></div>'
+    content: fs.readFileSync('html/projects.hbs')
   });
 });
 

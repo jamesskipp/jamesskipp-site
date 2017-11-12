@@ -6,12 +6,47 @@ body {
   font-family: verdana;
   color: #484848;
   min-height: 100%;
-  background-color: #eee;
+  background-color: #ebebeb;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+h4 {
+  font-size: 12px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+a {
+  color: #484848;
+}
+
+a:hover {
+  color: #4848bb;
+  text-decoration: none;
+}
+
+.text-left {
+  float: left;
+  padding-left: 20px;
+  width: 70%;
+}
+
+.text-right {
+  float: right;
+  font-weight: bold;
 }
 
 #background-pic-wrapper {
   height: 120px;
-  background-image: url("../../img/rockface_c3.png");
+  background-image: url("../../img/rockface.png");
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
@@ -20,6 +55,7 @@ body {
 #top-nav a:hover {
   color: white;
   font-size: 20px;
+  padding: 15px;
 }
 
 .row {
@@ -60,8 +96,10 @@ body {
   border: none;
   font-size: 20px;
   text-align: left;
-  padding: 15px;
-  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
   line-height: 20px;
 }
 
@@ -176,6 +214,15 @@ body {
   bottom: 0px;
 }
 
+#footer-wrapper p a {
+  color: white;
+  text-decoration: underline;
+}
+
+#footer-wrapper p a:hover {
+  color: #4848bb;
+}
+
 .btn-page,
 .btn-page:hover,
 .btn-page:focus {
@@ -206,4 +253,5 @@ body {
 
 .list-group-item {
   border-radius: 0px!important;
+  background-color: white;
 }
