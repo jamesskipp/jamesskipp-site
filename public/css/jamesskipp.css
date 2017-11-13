@@ -39,6 +39,10 @@ a:hover {
   width: 70%;
 }
 
+.text-left a {
+  text-decoration: underline;
+}
+
 .text-right {
   float: right;
   font-weight: bold;
