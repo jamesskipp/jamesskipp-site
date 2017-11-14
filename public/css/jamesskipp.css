@@ -48,6 +48,10 @@ a:hover {
   font-weight: bold;
 }
 
+.text-blog {
+  padding-top: 10px;
+}
+
 #background-pic-wrapper {
   height: 120px;
   background-image: url("../../img/rockface.png");
