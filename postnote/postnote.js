@@ -69,7 +69,6 @@ var getNotes = (notesDir, callback) => {
           });
         });
       }
-      console.log(notesArray);
       callback((_.sortBy(notesArray, ['stats.birthed.time'])).reverse());
     });
   } catch (err) {

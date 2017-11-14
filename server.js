@@ -68,6 +68,33 @@ app.get('/projects', (req, res) => {
   res.render('projects.hbs');
 });
 
+app.get('/404', (req, res, next) => {
+  var err = new Error();
+  err.status = 404;
+  err.url =
+  next(err);
+});
+
+app.get('*', (req, res) => {
+  res.redirect('/404');
+});
+
+// app.get('*', function(req, res, next) {
+//   var err = new Error();
+//   err.status = 404;
+//   next(err);
+// });
+
+app.use((err, req, res, next) => {
+  if(err.status !== 404) {
+    return next();
+  }
+
+  res.render('404.hbs', {
+    message: `404: Sorry, I couldnt find that.`
+  });
+});
+
 app.listen(port, () => {
   var now = new Date().toString();
   var log = `${now}: Started server on port ${port}`;
