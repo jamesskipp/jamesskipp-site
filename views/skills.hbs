@@ -1,15 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-    <title>James Skipp</title>
-    <link rel="icon" href="img/js.ico">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-		<link rel="stylesheet" href="css/jamesskipp.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {{> dependencies}}
+		<script src="js/skills.js"></script>
   </head>
   <body>
 		{{> navbar}}
@@ -18,28 +11,58 @@
         <div class="col-sm-1">
         </div>
         <div class="col-sm-10">
-          <h2>Programming Languages</h2>
+          <h2>Programming Languages, Libraries, and Frameworks</h2>
           <div class="list-group">
-            <a class="list-group-item">JavaScript ES6</a>
-            <a class="list-group-item">Java</a>
-            <a class="list-group-item">HTML5 & CSS3</a>
-            <a class="list-group-item">C++</a>
-            <a class="list-group-item">Python</a>
+            <button id="js-button" class="list-group-item group-button-inactive">
+							<div class="list-group-item-button">
+							JavaScript ES6<span class="glyphicon glyphicon-triangle-bottom"></span>
+							</div>
+						</button>
+						<div id="js-div" class="list-group-item">
+							<div class="list-group">
+								<a class="list-group-item" href="https://nodejs.org/en/">Node.js</a>
+								<a class="list-group-item" href="https://jquery.com/">jQuery</a>
+								<a class="list-group-item" href="https://www.npmjs.com/">NPM</a>
+								<a class="list-group-item" href="https://www.npmjs.com/package/mongoose">Mongoose</a>
+		            <a class="list-group-item" href="https://www.npmjs.com/package/yargs">Yargs</a>
+		            <a class="list-group-item" href="https://www.npmjs.com/package/mocha">Mocha</a>
+		            <a class="list-group-item" href="https://www.npmjs.com/package/axios">Axios</a>
+								<a class="list-group-item" href="https://www.npmjs.com/package/lodash">Lodash</a>
+								<a class="list-group-item" href="https://www.npmjs.com/package/handlebars">Handlebars</a>
+		            <a class="list-group-item" href="https://www.npmjs.com/package/hbs">hbs</a>
+							</div>
+						</div>
+						<button id="java-button" class="list-group-item group-button-inactive">
+							<div class="list-group-item-button">
+							Java 8<span class="glyphicon glyphicon-triangle-bottom"></span>
+							</div>
+						</button>
+						<div id="java-div" class="list-group-item">
+							<div class="list-group">
+								<a class="list-group-item" href="http://junit.org/junit5/">JUnit 5</a>
+								<a class="list-group-item" href="https://jsoup.org/">jsoup</a>
+								<a class="list-group-item" href="https://www.lwjgl.org/">LWJGL</a>
+							</div>
+						</div>
+						<button id="web-button" class="list-group-item group-button-inactive">
+							<div class="list-group-item-button">
+							HTML5 & CSS3<span class="glyphicon glyphicon-triangle-bottom"></span>
+							</div>
+						</button>
+						<div id="web-div" class="list-group-item">
+							<div class="list-group">
+								<a class="list-group-item" href="http://getbootstrap.com/">Bootstrap</a>
+							</div>
+						</div>
+            <a class="list-group-item">C++11</a>
+            <a class="list-group-item">Python 3.6</a>
+						<a class="list-group-item" href="http://www.smlnj.org/">Standard ML of New Jersey</a>
+						<a class="list-group-item" href="http://www.swi-prolog.org/">SWI-Prolog</a>
+						<a class="list-group-item" href="http://www.povray.org/">POV-Ray</a>
             <a class="list-group-item">VBA for Excel</a>
           </div>
-          <h2>Frameworks/Libraries/Tools</h2>
+          <h2>Tools</h2>
           <div class="list-group">
-            <a class="list-group-item" href="https://nodejs.org/en/">Node.Js</a>
-            <a class="list-group-item" href="https://www.npmjs.com/package/express">Express</a>
-            <!-- <div class="list-group-item">Angular 5</div> -->
-            <a class="list-group-item" href="https://jquery.com/">jQuery</a>
-            <a class="list-group-item" href="http://getbootstrap.com/2.3.2/">Bootstrap</a>
-            <a class="list-group-item" href="http://junit.org/junit5/">JUnit 5</a>
-            <a class="list-group-item" href="https://www.npmjs.com/">NPM</a>
-            <a class="list-group-item" href="https://www.npmjs.com/package/yargs">Yargs</a>
-            <a class="list-group-item" href="https://www.npmjs.com/package/lodash">Lodash</a>
-            <a class="list-group-item" href="https://www.npmjs.com/package/axios">Axios</a>
-            <a class="list-group-item" href="https://www.npmjs.com/package/hbs">hbs</a>
             <a class="list-group-item" href="https://www.heroku.com/">Heroku</a>
             <a class="list-group-item" href="https://amazonlightsail.com/">Amazon Lightsail</a>
             <a class="list-group-item" href="https://aws.amazon.com/cognito/">AWS Cognito</a>
@@ -47,19 +70,21 @@
           </div>
           <h2>Database</h2>
           <div class="list-group">
-            <div class="list-group-item">MongoDB</div>
-            <div class="list-group-item">Amazon DynamoDB</div>
-            <div class="list-group-item">SQL</div>
+            <a class="list-group-item">MongoDB</a>
+            <a class="list-group-item">Amazon DynamoDB</a>
+            <a class="list-group-item">SQL</a>
           </div>
           <h2>Software</h2>
           <div class="list-group">
-            <div class="list-group-item">Microsoft Office Suite</div>
-            <div class="list-group-item">Eclipse IDE</div>
-            <div class="list-group-item">ATOM</div>
-            <div class="list-group-item">PuTTY</div>
-            <div class="list-group-item">WinSCP</div>
-            <div class="list-group-item">GitHub</div>
-            <div class="list-group-item">ArcGIS</div>
+            <a class="list-group-item">Microsoft Office Suite</a>
+            <a class="list-group-item">Eclipse IDE</a>
+            <a class="list-group-item">ATOM</a>
+						<a class="list-group-item">Robomongo</a>
+						<a class="list-group-item">MySQL Workstation</a>
+            <a class="list-group-item">PuTTY</a>
+            <a class="list-group-item">WinSCP</a>
+            <a class="list-group-item">GitHub</a>
+            <a class="list-group-item">ArcGIS</a>
           </div>
         </div>
         <div class="col-sm-1">
