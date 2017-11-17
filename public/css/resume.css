@@ -1,0 +1,15 @@
+#resume-wrapper {
+  text-align: center;
+}
+
+#resume {
+  width: 100%;
+  display: inline-block;
+  min-height: 1100px;
+}
+
+@media (max-width: 768px) {
+  #resume {
+    width: 94%;
+  }
+}

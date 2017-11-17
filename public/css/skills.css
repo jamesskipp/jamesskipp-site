@@ -1,0 +1,33 @@
+.glyphicon-triangle-bottom {
+  float: right;
+  top: 4px;
+}
+
+.glyphicon-triangle-top {
+  float: right;
+  top: 0px;
+}
+
+#js-div {
+  display: none;
+}
+
+#js-div div {
+  margin: 10px;
+}
+
+#java-div {
+  display: none;
+}
+
+#java-div div {
+  margin: 10px;
+}
+
+#web-div {
+  display: none;
+}
+
+#web-div div {
+  margin: 10px;
+}

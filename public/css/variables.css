@@ -1,0 +1,16 @@
+:root {
+  --bg-color-dark: #484848;
+  --bg-color-darker: #282828;
+  --bg-color-white: white;
+  --bg-color-light: #ebebeb;
+  --bg-color-lighter: #f5f5f5;
+
+  --text-color-dark: #484848;
+  --text-color-blue: #4848bb;
+  --text-color-light: #eee;
+  --text-color-white: white;
+
+  --main-font: verdana;
+
+  --shadow-color-dark: rgba(0,0,0,0.2);
+}

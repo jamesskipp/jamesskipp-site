@@ -1,0 +1,10 @@
+.text-left {
+  float: left;
+  padding-left: 20px;
+  width: 70%;
+}
+
+.text-right {
+  float: right;
+  font-weight: bold;
+}

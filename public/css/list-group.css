@@ -1,0 +1,30 @@
+button.list-group-item:focus {
+  outline: none;
+  background-color: var(--bg-color-white);
+}
+
+button.list-group-item:hover,
+.group-button-active {
+  background-color: var(--bg-color-lighter)!important;
+}
+
+.list-group-item-button p {
+  margin: 0px;
+}
+
+.list-group-item-button p:first-child,
+.list-group-item-button a:first-child,
+.list-group-item-button span:first-child {
+  float: left;
+}
+
+.list-group-item-button p:last-child,
+.list-group-item-button a:last-child,
+.list-group-item-button span:last-child {
+  float: right;
+}
+
+.list-group-item {
+  border-radius: 0px!important;
+  background-color: var(--bg-color-white);
+}

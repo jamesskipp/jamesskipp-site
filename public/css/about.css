@@ -1,0 +1,22 @@
+.text-box {
+  font-size: 15px;
+  padding: 20px;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.glyphicon-option-horizontal {
+  top: 3px;
+}
+
+.full-image {
+  text-align: center;
+}
+
+#jskipp1-pic {
+  width: 100%;
+  height: calc(width * 2);
+  max-width: 380px;
+}

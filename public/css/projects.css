@@ -1,0 +1,13 @@
+.text-projects {
+  padding-left: 20px;
+}
+
+.text-projects  a {
+  text-decoration: underline;
+}
+
+.img-wide {
+  padding: 20px;
+  width: 100%;
+  height: calc(width / 2);
+}

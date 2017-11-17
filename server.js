@@ -68,6 +68,10 @@ app.get('/projects', (req, res) => {
   res.render('projects.hbs');
 });
 
+app.get('/contact', (req, res) => {
+  res.render('contact.hbs');
+});
+
 app.get('/404', (req, res, next) => {
   var err = new Error();
   err.status = 404;
@@ -75,15 +79,15 @@ app.get('/404', (req, res, next) => {
   next(err);
 });
 
-app.get('*', (req, res) => {
-  res.redirect('/404');
-});
-
-// app.get('*', function(req, res, next) {
-//   var err = new Error();
-//   err.status = 404;
-//   next(err);
+// app.get('*', (req, res) => {
+//   res.redirect('/404');
 // });
+
+app.get('*', function(req, res, next) {
+  var err = new Error();
+  err.status = 404;
+  next(err);
+});
 
 app.use((err, req, res, next) => {
   if(err.status !== 404) {
@@ -91,7 +95,7 @@ app.use((err, req, res, next) => {
   }
 
   res.render('404.hbs', {
-    message: `404: Sorry, I couldnt find that.`
+    message: `404: Sorry, this page doesn't exist!`
   });
 });
 

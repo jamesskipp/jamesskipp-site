@@ -1,0 +1,31 @@
+.btn-page,
+.btn-page:hover,
+.btn-page:focus {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-white);
+  border-radius: 0px;
+}
+
+.btn-wrapper {
+  position: relative;
+  height: 110px;
+}
+
+.btn-wrapper a {
+  top: 25%;
+}
+
+.btn-wrapper a:first-child {
+  position: absolute;
+  left: 0px;
+}
+
+.btn-wrapper a:last-child {
+  position: absolute;
+  right: 0px;
+}
+
+.glyphicon-triangle-left,
+.glyphicon-triangle-right {
+  top: 3px;
+}
