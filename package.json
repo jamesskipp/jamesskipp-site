@@ -16,5 +16,15 @@
     "express": "^4.16.2",
     "hbs": "^4.0.1",
     "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "csslint": "^1.0.5",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "htmlhint": "^0.9.13"
   }
 }

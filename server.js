@@ -6,17 +6,17 @@ const path = require('path');
 const postnote = require('./postnote/postnote.js');
 
 const port = process.env.PORT || 3000;
-var app = express();
+const app = express();
 
-hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerPartials(`${__dirname}/views/partials`);
 app.set('view engine', 'hbs')
-  .use(express.static(path.join(__dirname + '/public')));
+  .use(express.static(path.join(`${__dirname}/public`)));
 
 app.use((req, res, next) => {
-  var now = new Date().toString();
-  var log = `${now}: ${req.ip} ${req.method} ${req.url}`;
+  const now = new Date().toString();
+  const log = `${now}: ${req.ip} ${req.method} ${req.url}`;
 
-  fs.appendFile('server.log', log + '\n', (err) => {
+  fs.appendFile('server.log', `${log}\n`, (err) => {
     if (err) {
       console.log('Unable to append to server.log');
     }
@@ -25,14 +25,13 @@ app.use((req, res, next) => {
   next();
 });
 
-hbs.registerHelper('getCurrentYear', () => {
-  return new Date().getFullYear();
-});
+hbs.registerHelper('getCurrentYear', () => new Date().getFullYear());
 
 hbs.registerHelper('ifEdited', (birthTime, editTime) => {
   if (birthTime !== editTime) {
     return `<p>Edited: ${editTime} EST`;
   }
+  return '';
 });
 
 app.get('/', (req, res) => {
@@ -56,10 +55,9 @@ app.get('/resume', (req, res) => {
 });
 
 app.get('/blog', (req, res) => {
-  var blogs;
-  postnote.getNotes(__dirname + '/notes/', (blogs) => {
+  postnote.getNotes(`${__dirname}/notes/`, (blogs) => {
     res.render('blog.hbs', {
-      blogs
+      blogs,
     });
   });
 });
@@ -73,37 +71,33 @@ app.get('/contact', (req, res) => {
 });
 
 app.get('/404', (req, res, next) => {
-  var err = new Error();
+  const err = new Error();
   err.status = 404;
   err.url =
   next(err);
 });
 
-// app.get('*', (req, res) => {
-//   res.redirect('/404');
-// });
-
-app.get('*', function(req, res, next) {
-  var err = new Error();
+app.get('*', (req, res, next) => {
+  const err = new Error();
   err.status = 404;
   next(err);
 });
 
 app.use((err, req, res, next) => {
-  if(err.status !== 404) {
+  if (err.status !== 404) {
     return next();
   }
 
-  res.render('404.hbs', {
-    message: `404: Sorry, this page doesn't exist!`
+  return res.render('404.hbs', {
+    message: '404: Sorry, this page doesn\'t exist!',
   });
 });
 
 app.listen(port, () => {
-  var now = new Date().toString();
-  var log = `${now}: Started server on port ${port}`;
+  const now = new Date().toString();
+  const log = `${now}: Started server on port ${port}`;
 
-  fs.appendFile('server.log', log + '\n', (err) => {
+  fs.appendFile('server.log', `${log}\n`, (err) => {
     if (err) {
       console.log('Unable to append to server.log');
     }

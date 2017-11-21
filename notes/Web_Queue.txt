@@ -1,0 +1,7 @@
+﻿So I’ve been taking this operating systems class at Old Dominion University, and we’ve been given an assignment to emulate a CPU scheduling queue using a preemptive priority-based algorithm. In the description of the project my professor recommends using Python, Java, or C/C++, but I’ve decided to go for a web-based approach using HTML/JS in the browser. The main algorithm and simulation components are in the JavaScript, obviously, and the queue is represented as Bootstrap list-group-items. I’m using jQuery to update the DOM.
+
+What started out as a fun distraction from my other more pressing responsibilities, quickly turned into a logical mess and debugging nightmare. It’s one of those projects where I feel like my code is really sloppy or hacky and it truly hurts me to my soul to look at. But hey, it works! I’ll be looking for ways to simplify the code and make it more readable.
+
+You can find it here: https://github.com/jamesskipp/web-queue.
+
+Features to be added: A form for adding processes with different priorities and lengths, the ability to pause the simulation so you can add processes, the ability to remove processes before they’ve been processed, and maybe if I want to go past the specifications of the class project, the ability to switch which scheduling algorithm you want to simulate.

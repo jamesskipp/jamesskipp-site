@@ -1,5 +1,6 @@
 node_modules
 old
-package-lock.json
 server.log
 public/dl
+.eslintrc.json
+.htmlhintrc
