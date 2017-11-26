@@ -55,7 +55,7 @@ a:hover {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   background-image: url("../../img/rockface.png");
   filter: grayscale(100%);
-  height: 120px;
+  height: 70px;
 }
 
 #top-nav a,
