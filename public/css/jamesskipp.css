@@ -63,6 +63,19 @@ a:hover {
   color: var(--text-color-white);
   font-size: 20px;
   padding: 15px;
+  border: 0!important;
+}
+
+#top-nav li a:hover {
+  background-color: var(--bg-color-darker);
+}
+
+#top-nav a:focus {
+  background-color: transparent;
+}
+
+#top-nav button a:hover {
+  /*background-color: transparent;*/
 }
 
 .navbar {
@@ -123,6 +136,7 @@ a:hover {
 .dropbtn:hover {
   text-decoration: none;
   background-color: var(--bg-color-darker);
+  border: 0;
 }
 
 .dropdown:hover .dropdown-content {
