@@ -1,8 +1,17 @@
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
 .text-projects {
   padding-left: 20px;
 }
 
-.text-projects  a {
+.text-projects p {
+  padding-left: 20px;
+}
+
+.text-projects a {
   text-decoration: underline;
 }
 

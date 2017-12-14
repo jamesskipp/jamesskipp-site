@@ -4,3 +4,4 @@ server.log
 public/dl
 .eslintrc.json
 .htmlhintrc
+.idea

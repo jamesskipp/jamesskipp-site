@@ -9,20 +9,25 @@
 .btn-wrapper {
   position: relative;
   height: 110px;
+  text-align: center;
 }
 
 .btn-wrapper a {
   top: 25%;
 }
 
-.btn-wrapper a:first-child {
+.btn-left {
   position: absolute;
   left: 0px;
 }
 
-.btn-wrapper a:last-child {
+.btn-right {
   position: absolute;
   right: 0px;
+}
+
+.btn-center {
+  position: relative;
 }
 
 .glyphicon-triangle-left,
