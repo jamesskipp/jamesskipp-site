@@ -34,6 +34,14 @@ hbs.registerHelper('ifEdited', (birthTime, editTime) => {
   return '';
 });
 
+app.get('/contact', (req, res) => {
+  res.render('contact.hbs');
+});
+
+app.get('*', (req, res) => {
+  res.render('cover.hbs')
+})
+
 app.get('/', (req, res) => {
   res.render('about.hbs');
 });
@@ -64,10 +72,6 @@ app.get('/blog', (req, res) => {
 
 app.get('/projects', (req, res) => {
   res.render('projects.hbs');
-});
-
-app.get('/contact', (req, res) => {
-  res.render('contact.hbs');
 });
 
 app.get('/404', (req, res, next) => {
