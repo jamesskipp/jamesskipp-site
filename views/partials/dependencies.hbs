@@ -17,3 +17,17 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/js/flashlight-js.min.js"></script>
+<script>
+  function is_touch_enabled() {
+    return ('ontouchstart' in window) ||
+      (navigator.maxTouchPoints > 0) ||
+      (navigator.msMaxTouchPoints > 0);
+  }
+
+  if (!is_touch_enabled()) {
+    flashlightJS.lights.off();
+    flashlightJS.flashlight.on();
+  }
+
+</script>
